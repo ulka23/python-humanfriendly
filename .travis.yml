@@ -14,7 +14,7 @@ matrix:
   
   - os: linux
     arch: ppc64le
-    language: generic
+   #  language: generic
   - python: pypy
   - python: 2.7
   - python: 3.5
