@@ -2,20 +2,21 @@ language: python
 cache: pip
 matrix:
   include:
-  - os: osx
-    language: generic
-  - python: pypy
-  - python: 2.7
-  - python: 3.5
-  - python: 3.6
-  - python: 3.7
-  - python: 3.8
-  - python: 3.9-dev
+  #- os: osx
+  #  language: generic
+  #- python: pypy
+  #- python: 2.7
+  #- python: 3.5
+  #- python: 3.6
+  #- python: 3.7
+  #- python: 3.8
+  #- python: 3.9-dev
   
   - os: linux
     arch: ppc64le
     python: pypy
     python: 2.7
+    python: 3.8
    
 install:
   - scripts/travis.sh pip install --upgrade setuptools
